@@ -1,0 +1,20 @@
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+}
+
+th {
+    height: 20px;
+}
+
+.tdStyle {
+    width: 50px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.theadStyle {
+    width: 50px;
+    background-color: slategrey;
+    text-align: center;
+}

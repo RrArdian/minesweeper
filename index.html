@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MINESWEEPER 1D</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+    <h1>MINESWEEPER 1D</h1>
+    <div id="gameInput">
+        <form onsubmit="return false;">
+            <p>Length of Board <input type="number" name="numBoard" placeholder="Input length of board" min="1" required></p>
+            <p>Number of Bombs <input type="number" name="numBombs" placeholder="Input number of bomb" min="1" required></p>
+            <p><button onclick="sendData()" id="btnSend">Start Game</button></p>
+        </form>
+    </div>
+    <table id="board"></table>
+    <div id="gameControl" style="display: none">
+        <p>Input Coord <input type="number" id="inputCoord" placeholder="Input position" required>
+            <button onclick="play()" id="btnPlay">Play</button></p>
+    </div>
+    <div id="askRematch" style="display: none">
+        <p id="message"></p>
+        <button onclick="rematch()">Start New Game</button>
+    </div>
+    <script src="minesweeper.js"></script>
+</body>
+</html>
